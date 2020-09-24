@@ -5,6 +5,7 @@ def turn(board)
   until(valid_move?(board,input))
     turn(board)
   end
+  move(board,index)
 end
 
 def valid_move?(board, index)
