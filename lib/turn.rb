@@ -3,7 +3,9 @@ def turn(board)
   input = gets.strip
   input = input_to_index(input)
   
-  
+  until(valid_move?(board,input))
+    turn(board)
+  end
   
   move(board,input)
   display_board(board)
